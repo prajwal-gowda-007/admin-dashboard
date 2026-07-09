@@ -85,13 +85,14 @@ body
 {
     display: flex;
     align-items: center;
-    padding: 8px 28px;
+    padding: 2px 28px;
     justify-content: space-between;
 }
 
 .search-bar
 {
     display:flex;
+    gap: 8px;
     align-items: center;
 }
 .search-bar-imgs
@@ -102,10 +103,10 @@ body
 
 .search-bar input
 {
-    border-radius: 14px;
+    border-radius: 12px;
     border: none;
     width: 600px;
-    padding: 8px;
+    padding: 4px 12px;
     background-color: gainsboro;
 }
 
@@ -121,19 +122,20 @@ body
     display:flex;
     align-items: center;
     gap:1.5rem;
+    padding: 2px 28px;
 }
 
 .profile-left-panel > .profile-img 
 {
-    height: 68px;
-    width: 68px;
+    height: 58px;
+    width: 58px;
     border-radius: 50%;
 }
 
 .profile-panel
 {
     display: flex;
-    padding: 8px 28px;
+    padding: 4px 28px;
     justify-content: space-between;
 }
 
@@ -186,9 +188,7 @@ body
 
 .project-cards
 {
-    min-height: 120px;
-    padding: 12px;
-    border-radius: 12px;
+    min-height: 200px;
     background-color: white;
     border-left: 8px solid rgb(247, 196, 29);
 }
@@ -202,13 +202,6 @@ body
 .announcements > .heading-p, .user .user-id
 {
     font-weight: 700;
-}
-
-.announcements, .trending
-{
-    background-color: white ;
-    border-radius: 12px;
-    padding: 20px;
 }
 
 .announcements p
@@ -233,11 +226,6 @@ body
     display: flex;
     gap: 12px;
     align-items: center;
-}
-
-.trending p
-{
-    line-height: 0.6rem;
 }
 
 .cards-actions
@@ -266,4 +254,12 @@ body
 .content-wrapper h2, .announcements-wrapper h2, .trending-wrapper h2
 {
     margin: 8px 4px;
+}
+
+.project-cards, .announcements, .trending
+{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
