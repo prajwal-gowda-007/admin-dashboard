@@ -62,6 +62,11 @@ body
     padding: 10px 0;
 }
 
+.dashboard-list > li:nth-child(6)
+{
+    margin-bottom: 2.5rem;
+}
+
 .dashboard-list > li > a 
 {
     text-decoration: none;
@@ -78,17 +83,16 @@ body
 
 .search-bar-layout
 {
-    display:grid;
-    grid-template-columns: auto auto;
+    display: flex;
     align-items: center;
+    padding: 8px 28px;
+    justify-content: space-between;
 }
 
 .search-bar
 {
     display:flex;
     align-items: center;
-    padding: 16px 32px;
-    gap: 2rem;
 }
 .search-bar-imgs
 {
@@ -128,16 +132,15 @@ body
 
 .profile-panel
 {
-    display:grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    padding: 8px 28px;
+    justify-content: space-between;
 }
 
 .profile-left-panel
 {
     display: flex;
     align-items: center;
-    gap:2rem;
-    padding: 16px 32px;
 }
 
 .profile-info p
@@ -149,7 +152,8 @@ body
 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 18px;
+
 }
 
 .profile-right-panel > button
@@ -157,7 +161,109 @@ body
     background-color: rgb(26, 112, 241);
     color: white;
     font-weight: 700;
-    padding: 8px 32px;
+    padding: 8px 28px;
     border-radius: 30px;
+    border: none;
 }
 
+/* Content layout */
+.content-layout
+{
+    display: grid;
+    padding: 16px 8px;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects
+{
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.content-wrapper{ margin-left: 12px;}
+
+.project-cards
+{
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: white;
+    border-left: 8px solid rgb(247, 196, 29);
+}
+
+.sidebar-section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements > .heading-p, .user .user-id
+{
+    font-weight: 700;
+}
+
+.announcements, .trending
+{
+    background-color: white ;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.announcements p
+{
+    margin:  12px;
+}
+
+.announcements-wrapper, .trending-wrapper
+{
+    padding:0px 16px;
+}
+
+.trending img
+{
+    width: 48px;
+    height: 48px;background-color: rgb(58, 142, 216);
+    border-radius: 50%;
+}
+
+.trending .user
+{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.trending p
+{
+    line-height: 0.6rem;
+}
+
+.cards-actions
+{
+    display: flex;
+    justify-content: right;
+    gap: 16px;
+    padding:12px 8px 8px 8px;
+    align-items: center;
+}
+
+.cards-actions button
+{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cards-actions img 
+{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.content-wrapper h2, .announcements-wrapper h2, .trending-wrapper h2
+{
+    margin: 8px 4px;
+}
